@@ -1,0 +1,241 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.cajaverde{
+	background-color: #00FFBF;
+}
+.cajaverde1{
+	background-color: #BFFF00;
+}
+.cajaverde2{
+	background-color: #C8FE2E;
+}
+.cajaazul1{
+	background-color:#00FFFF;
+}
+.cajaazul2{
+	background-color:##9AFE2E;
+}
+.cajaazul3{
+	background-color:#0174DF;
+}
+.cajablanca{
+	background-color:white;
+}
+
+/*/firts Pseudoclase*/
+div p:last-child{
+	font-size: 120%;
+	font-weight: bold;
+	border-style: solid;
+	border-color: black
+}
+/* siguiente link  */
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+/* siguiente hover  */
+
+a {
+  background-color: powderblue;
+  transition: background-color .5s;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+/* siguiente active */ 
+
+a:active { color: lime; }       
+}
+/* siguiente  */
+a:any-link {
+  border: 1px solid blue;
+  color: orange;
+}
+/* siguiente any link */
+
+/* navegadores WebKit */
+a:-webkit-any-link {
+  border: 1px solid blue;
+  color: orange;
+}
+
+/* siguiente checked */
+
+.div,
+select {
+  margin: 8px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: red;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+
+/* siguiente defaul  */
+
+input:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+
+input:default + label {
+  color: coral;
+}
+/* siguiente dir */
+:dir(ltr) {
+  background-color: yellow;
+}
+
+:dir(rtl) {
+  background-color: powderblue;
+}
+/* siguiente d isabled  */
+
+input[type="text"]:disabled {
+  background: #ccc;
+}
+
+
+/* siguiente  empty  */
+.box {
+  background: pink;
+  height: 80px;
+  width: 80px;
+}
+
+.box:empty {
+  background: lime;
+}
+
+/* siguiente enabled  */
+
+input:enabled {
+  color: #2b2;
+}
+
+input:disabled {
+  color: #aaa;
+}
+
+/* siguiente first  */
+@page :first {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+p {
+  page-break-after: always;
+}
+
+/* siguiente first-child  */
+p:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+/* siguiente first-of-typet */
+p:first-of-type {
+  color: red;
+  font-style: italic;
+}
+article :first-of-type {
+  background-color: pink;
+}
+
+/* siguiente focus  */
+
+.red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
+/* siguiente focus-visible  */
+input, button {
+  margin: 10px;
+}
+
+.focus-only:focus {
+  outline: 2px solid black;
+}
+
+.focus-visible-only:focus-visible {
+  outline: 4px dashed darkorange;
+}
+
+/* siguiente focus-whithin  */
+form {
+  border: 1px solid;
+  color: gray;
+  padding: 4px;
+}
+
+form:focus-within {
+  background: #ff8;
+  color: black;
+}
+
+input {
+  margin: 4px;
+}
+
+/* siguiente indeterminante  */
+
+input:indeterminate + label {
+  background: lime;
+}
+
+/* siguiente in-range  */
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+input:in-range + label::after {
+  content: 'bien.';
+}
+
+input:out-of-range + label::after {
+  content: 'fuera de rango!';
+}
